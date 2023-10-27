@@ -1,6 +1,6 @@
 /*
  * 	Palindromic Numbered Pyramid
- * 		    1
+ * 		1
  * 	      2	1 2
  *	    3 2	1 2 3
  * 	  4 3 2	1 2 3 4
@@ -29,12 +29,12 @@ public class pyramidPalindromicNumbered {
 			for(int k = 0; k < (i * 2) - 1; k++) {
 
 				if(x == 1) { 
-					for(int z = 0; z < ((i * 2) - 1) / 2; z++)
-						System.out.print((x++) + "   ");
+					for(int z = 0; z < ((i * 2) - 1) / 2 + 1; z++)
+						System.out.print((x++) + " ");
 					break;
 				}
 				else
-					System.out.print((x--) + "   ");
+					System.out.print((x--) + " ");
 			}
 			System.out.println();
 		}
